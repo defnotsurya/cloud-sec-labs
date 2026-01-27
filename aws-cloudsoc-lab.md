@@ -1,7 +1,7 @@
 # AWS Cloud SOC Lab practice - credentional comprise, detection and response
 
 ## Overview
-This project is meant to simulate a Cloud SOC investigation by detecting and responding to compromised aws iam credentials. The lab demonstrates the start of suspicias API activity, detection through AWS guard duty, investigation through cloudtrail logs, and then fixing the problem with iam security controls. 
+This lab simulates a real world Cloud SOC investigation involving compromised AWS IAM credentials. It demonstrates how attackers abuse API access for enumeration, how GuardDuty detects suspicious behavior, how CloudTrail is used to investigate activity, and how IAM controls are applied to contain and remediate the incident.
 
 ## Components Used
 
