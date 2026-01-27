@@ -67,5 +67,7 @@ Future improvements could be exporting the logs to a SIEM tool such as splunk, a
 
 ## Lessons Learned
 
-
+This lab showed how quickly cloud environments can be abused once IAM credentials are exposed, even with limited permissions. Repeated `ListBuckets` calls made it clear how attackers automate API enumeration instead of manually clicking around.
+GuardDuty was used to show suspicious behavior like Kali Linux–based API calls and root credential usage, and CloudTrail was used for understanding what actually happened. Building a timeline from logs helped separate normal activity from attacker behavior.
+This also reinforced the importance of least privilege and avoiding routine root access. Permission boundaries limited what the compromised user could do, and proper logging made investigation and response much easier.
 
